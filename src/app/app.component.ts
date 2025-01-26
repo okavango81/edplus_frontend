@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import {SlideCardComponent} from '../component/slide-card/slide-card.component';
 
 @Component({
   selector: 'app-root',
-  imports: [SlideCardComponent],
+  imports: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
