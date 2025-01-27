@@ -1,0 +1,37 @@
+<nav class="navbar-edplus" [ngClass]="{'scrolled' : isScrolled}">
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">EdPlus</div>
+
+    <!-- Links -->
+    <ul class="flex space-x-6">
+      <li><a href="#" class=" ">Início</a></li>
+      <li><a href="#" class=" ">Séries</a></li>
+      <li><a href="#" class=" ">Lançamentos</a></li>
+      <li><a href="#" class=" ">Infantil</a></li>
+    </ul>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary search-edplus" data-bs-toggle="modal" data-bs-target="#searchModal">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pesquisar</h5>
+            <i class="fa-regular fa-rectangle-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
+          </div>
+          <div class="modal-body">
+            <input class="form-control me-2" type="search" placeholder="Pesquise por ator, título, gênero..." aria-label="Search">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+

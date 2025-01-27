@@ -1,0 +1,86 @@
+.navbar-edplus {
+  background-color: transparent;
+  padding: 1.2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1060;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Muda o background após a rolagem */
+.navbar-edplus.scrolled {
+  box-shadow: 0 20px 50px 20px rgb(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75); /* Cor após rolagem */
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div .logo {
+  font-family: "Righteous", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+div .logo:hover {
+  color: #60A5FA;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-left: 1rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color:white;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  color: #60A5FA; /* Azul claro */
+  cursor: pointer;
+  font-width: 900;
+}
+
+.search-edplus{
+  font-size: 1rem;
+}
+
+/* modal de pesquisa */
+.modal-header{
+  justify-content: space-between;
+  background-color: #274161;
+}
+
+.modal-body{
+  background-color: #274161;
+}
+
+.modal-title{
+  color: #dfdfdf !important;
+}
+
+/* botão de fechar o modal */
+.fa-rectangle-xmark{
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  color: #dfdfdf;
+}
