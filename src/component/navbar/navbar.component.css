@@ -1,21 +1,23 @@
 .navbar-edplus {
   background-color: transparent;
-  padding: 1.2rem;
+  padding: 0.1rem;
   position: fixed;
   width: 100%;
   z-index: 1060;
   transition: background-color 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.6); /* Cor após rolagem */
+  box-shadow: 10px 50px 80px 80px rgb(0, 0, 0, 0.6);
 }
 
 
 /* Muda o background após a rolagem */
 .navbar-edplus.scrolled {
-  box-shadow: 0 20px 50px 20px rgb(0, 0, 0, 0.75);
-  background-color: rgba(0, 0, 0, 0.75); /* Cor após rolagem */
+  background-color: rgba(0, 0, 0, 0.9); /* Cor após rolagem */
+  box-shadow: 0 20px 50px 50px rgb(0, 0, 0, 0.9);
 }
 
 .container {
-  max-width: 1024px;
+  /*max-width: 1024px;*/
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

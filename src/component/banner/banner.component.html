@@ -1,0 +1,15 @@
+<div class="swiper banner">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let movie of movies">
+      <a href="detail.html">
+        <img [src]="movie.image" alt="{{ movie.title }}">
+      </a>
+      <div class="hero-content2">
+        <h1>{{movie.title}}</h1>
+      </div>
+    </div>
+  </div>
+  <!-- Paginação -->
+  <div class="swiper-pagination"></div>
+</div>
+
