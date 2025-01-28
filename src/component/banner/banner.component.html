@@ -2,10 +2,12 @@
   <div class="swiper-wrapper">
     <div class="swiper-slide" *ngFor="let movie of movies">
       <a href="detail.html">
-        <img [src]="movie.image" alt="{{ movie.title }}">
+        <img class="img-fluid" [src]="movie.image" alt="{{ movie.title }}">
       </a>
       <div class="hero-content2">
-        <h1>{{movie.title}}</h1>
+       <a href="detail.html">
+         <h1>{{movie.title}}</h1>
+       </a>
       </div>
     </div>
   </div>
