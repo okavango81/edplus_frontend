@@ -1,22 +1,37 @@
 import {AfterViewInit, Component, ElementRef} from '@angular/core';
 import Swiper from 'swiper';
-// import Swiper from 'swiper/bundle';
 import {Navigation, Pagination, Autoplay} from 'swiper/modules';
 
-// import 'swiper/css/bundle';
+import 'swiper/css/bundle';
 
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import {NgForOf} from '@angular/common';
 
 @Component({
   selector: 'app-slide-card',
-  imports: [],
+  imports: [
+    NgForOf
+  ],
   templateUrl: './slide-card.component.html',
   styleUrl: './slide-card.component.css'
 })
 
 export class SlideCardComponent implements AfterViewInit {
+
+  moviesCard = [
+    {title: 'Bad Boys II', image: 'edplus_img/bb2/bb2_card.png'},
+    {title: 'O Protetor 2', image: 'edplus_img/opt/op2_card.png'},
+    {title: 'Norbit', image: 'edplus_img/nbt/nbt_card.png'},
+    {title: 'Chaplin', image: 'edplus_img/chp/chp_card.png'},
+    {title: 'Chaves', image: 'edplus_img/chv/chv_card.png'},
+    {title: 'Bad Boys II', image: 'edplus_img/bb2/bb2_card.png'},
+    {title: 'O Protetor 2', image: 'edplus_img/opt/op2_card.png'},
+    {title: 'Norbit', image: 'edplus_img/nbt/nbt_card.png'},
+    {title: 'Chaplin', image: 'edplus_img/chp/chp_card.png'},
+    {title: 'Chaves', image: 'edplus_img/chv/chv_card.png'}
+  ];
 
 
   // constrói uma instância que permite acesso direto a elementos no DOM
@@ -24,13 +39,13 @@ export class SlideCardComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.card-swiper', {
       modules: [Navigation, Pagination, Autoplay],
       spaceBetween: 36,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
       pagination: {
         clickable: true,
         el: '.swiper-pagination',

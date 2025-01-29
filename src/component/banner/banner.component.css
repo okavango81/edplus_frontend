@@ -12,7 +12,7 @@
   cursor: pointer !important;
 }
 
-/* gradienteno bottom */
+/* gradiente no bottom */
 .banner-slide::after {
   content: ""; /* Pseudo-elemento vazio */
   position: absolute;
@@ -23,12 +23,10 @@
 
   /*A cor inicia cobre os primeiros ?% da altura do elemento.*/
   /*A transição entre as cores termina quando ?% da altura é atingida*/
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 10%, rgba(0, 0, 0, 1) 80%);
-
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 1) 90%);
   pointer-events: none; /* Evita interferir com cliques */
   z-index: 1; /* Coloca acima da imagem */
 }
-
 
 /* posição dos bullets */
 .banner-pagination {
@@ -50,14 +48,14 @@
   opacity: 1; /* Transparência total */
 }
 
+/* posição do título */
 .hero-content2 h1 {
   font-size: 3rem;
   font-weight: bold;
   color: white;
   position: relative;
-
   z-index: 2;
-  bottom: 110px;
+  bottom: 130px;
   padding: 0 18px;
   margin: 0 auto; /* Centraliza horizontalmente */
   display: block; /* Garante que seja tratado como um bloco */
