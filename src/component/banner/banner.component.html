@@ -1,6 +1,6 @@
-<div class="swiper banner">
+<div class="swiper banner-swiper">
   <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let movie of movies">
+    <div class="swiper-slide banner-slide" *ngFor="let movie of movies">
       <a href="detail.html">
         <img class="img-fluid" [src]="movie.image" alt="{{ movie.title }}">
       </a>
@@ -12,6 +12,6 @@
     </div>
   </div>
   <!-- Paginação -->
-  <div class="swiper-pagination"></div>
+  <div class="swiper-pagination banner-pagination"></div>
 </div>
 

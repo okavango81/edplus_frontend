@@ -1,6 +1,6 @@
 /* Define o tamanho e a aparência das imagens */
-.swiper-slide img {
-  width: 100%;
+.banner-slide img {
+  width: 150%;
   min-height: 85vh;
   max-height: 85vh;
   box-sizing: border-box;
@@ -8,12 +8,12 @@
   object-fit: cover;
 }
 
-.swiper-slide img:hover {
+.banner-slide img:hover {
   cursor: pointer !important;
 }
 
 /* gradienteno bottom */
-.swiper-slide::after {
+.banner-slide::after {
   content: ""; /* Pseudo-elemento vazio */
   position: absolute;
   bottom: 0;
@@ -29,12 +29,9 @@
   z-index: 1; /* Coloca acima da imagem */
 }
 
-.swiper-slide img:active {
-  cursor: grabbing !important;
-}
 
 /* posição dos bullets */
-.swiper-pagination {
+.banner-pagination {
   position: relative;
   bottom: 100px !important;
 }

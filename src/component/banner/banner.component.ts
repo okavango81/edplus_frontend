@@ -15,7 +15,7 @@ import 'swiper/css/pagination';
 })
 export class BannerComponent implements AfterViewInit {
 
-  constructor(private elementRef: ElementRef) {
+  constructor(private elRef: ElementRef) {
   }
 
   movies = [
@@ -27,13 +27,13 @@ export class BannerComponent implements AfterViewInit {
   ];
 
   ngAfterViewInit(): void {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.banner-swiper', {
       modules: [Navigation, Pagination, Autoplay],
       spaceBetween: 1,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
       pagination: {
         clickable: true,
         el: '.swiper-pagination',
@@ -61,7 +61,7 @@ export class BannerComponent implements AfterViewInit {
     });
 
     // Eventos para toque e mouse
-    const swiperElement = this.elementRef.nativeElement.querySelector('.swiper');
+    const swiperElement = this.elRef.nativeElement.querySelector('.swiper');
 
     // Parar autoplay ao interagir
     swiper.on('touchStart', () => swiper.autoplay.stop());
