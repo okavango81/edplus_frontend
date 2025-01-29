@@ -58,16 +58,16 @@ button.navbar-toggler {
 }
  /* input search */
 input.form-control {
-  min-width: 35vw;
+  min-width: 25vw;
   max-width: 100vw;
-  border-radius: 50px 0 0 50px;
+  border-radius: 12px 0 0 12px;
   padding: .375rem .95rem;
 }
 
 .search-button {
   color: black;
   background-color: springgreen;
-  border-radius: 0 50px 50px 0;
+  border-radius: 0 12px 12px 0;
   padding: .375rem .9rem;
   border: solid 4px springgreen;
 }
