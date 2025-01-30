@@ -18,7 +18,7 @@ export class NavbarComponent {
   onWindowScroll(): void {
 
     // Verifica se a rolagem ultrapassa 300px
-    this.isScrolled = window.scrollY > 300;
+    this.isScrolled = window.scrollY > 150;
     console.log(window.scrollY);
   }
 }

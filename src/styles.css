@@ -10,8 +10,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  /*background: linear-gradient(to bottom, #000000, #030142);*/
-  background: linear-gradient(to bottom, #000000, #000000);
+  background: linear-gradient(to bottom, #000000, #030142);
+  /*background: linear-gradient(to bottom, #000000, #000000);*/
   color: #000; /* Cor do texto padrão */
   min-height: 250vh;
 }

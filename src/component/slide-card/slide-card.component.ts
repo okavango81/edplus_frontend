@@ -41,7 +41,7 @@ export class SlideCardComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const swiper = new Swiper('.card-swiper', {
       modules: [Navigation, Pagination, Autoplay],
-      spaceBetween: 36,
+      spaceBetween: 35,
       // navigation: {
       //   nextEl: '.swiper-button-next',
       //   prevEl: '.swiper-button-prev',
@@ -57,17 +57,17 @@ export class SlideCardComponent implements AfterViewInit {
       loop: false, // Removido loop para evitar comportamento inesperado
       speed: 1500,
       breakpoints: {
-        375: {slidesPerView: 2},
-        412: {slidesPerView: 1},
-        576: {slidesPerView: 2},
+        374: {slidesPerView: 2},
+        412: {slidesPerView: 2},
+        576: {slidesPerView: 3},
         667: {slidesPerView: 5},
         684: {slidesPerView: 4},
         734: {slidesPerView: 5},
         736: {slidesPerView: 5},
         768: {slidesPerView: 2},
-        992: {slidesPerView: 3},
+        992: {slidesPerView: 4},
         1024: {slidesPerView: 4},
-        1200: {slidesPerView: 4},
+        1200: {slidesPerView: 5},
         1400: {slidesPerView: 6},
       },
     });
