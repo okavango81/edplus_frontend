@@ -55,7 +55,7 @@ a.nav-link:hover {
 
 button.navbar-toggler {
   border: none !important;
-  color: springgreen !important;
+  color: white !important;
 }
 
 
@@ -72,12 +72,12 @@ button.navbar-toggler {
   background-color: transparent;
   color: white;
   font-size: 1.2rem;
-  font-weight: 400;
 }
 .form-control::placeholder {
   color: white;
   opacity: 1;
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .search-button {
