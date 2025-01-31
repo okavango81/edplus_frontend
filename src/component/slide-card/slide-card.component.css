@@ -65,9 +65,10 @@
 /* Cor dos bullets inativos */
 .swiper-pagination-bullet {
   background-color: #ccc; /* Cor de fundo do bullet */
-  opacity: 0.2; /* Transparência do bullet */
+  opacity: 0.8; /* Transparência do bullet */
   transition: opacity 0.4s;
   scale: 1.2;
+  z-index: 1;
 }
 
 /* Bullet ativo (atual) */
@@ -78,8 +79,8 @@
 
 .highlights {
   /*color: white;*/
-  font-size: 1.05rem;
-  /*font-weight: bold;*/
+  font-size: 1.35rem;
+  font-weight: 300;
   position: relative;
   top: 10px;
   left: 14px;

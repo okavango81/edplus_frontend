@@ -6,14 +6,14 @@ import 'swiper/css/pagination';
 import {BannerComponent} from '../component/banner/banner.component';
 import {SlideCardComponent} from '../component/slide-card/slide-card.component';
 import {FooterComponent} from '../component/footer/footer.component';
+import {DetailComponent} from '../component/detail/detail.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     NavbarComponent,
-    BannerComponent,
-    SlideCardComponent,
     FooterComponent,
+    DetailComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
