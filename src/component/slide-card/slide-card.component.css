@@ -1,6 +1,6 @@
 /* Container */
 .swiper {
-  width: 98.7%;
+  width: 97.7%;
   align-self: center;
   position: relative;
   top: 10px;
@@ -19,17 +19,18 @@
   height: 40vh;
   width: 100%;
   border: 3px solid transparent;
-  border-radius: 12px;
-  transition: border 0.3s ease, transform 0.3s ease;
+  border-radius: 4px;
+  transition: border 0.2s ease, transform 0.5s ease;
   box-sizing: border-box;
   display: block;
+  transform: scale(0.9);
 }
 
 .swiper-slide img:hover {
   border: white 3px solid;
   cursor: pointer;
-  border-radius: 5px;
-  transform: scale(1.05); /* Pequeno zoom para dar destaque */
+  border-radius: 4px;
+  transform: scale(1); /* Pequeno zoom para dar destaque */
 }
 
 .swiper-slide img:active {
@@ -83,7 +84,7 @@
   font-size: 1.35rem;
   font-weight: 300;
   position: relative;
-  top: 10px;
-  left: 16px;
+  left: 5px;
+  bottom: 10px;
   color: #ffffff !important;
 }
