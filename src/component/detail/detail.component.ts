@@ -1,13 +1,11 @@
 import {AfterViewInit, Component, ElementRef, ViewEncapsulation} from '@angular/core';
 import {NgForOf} from "@angular/common";
-import {SlideCardComponent} from '../slide-card/slide-card.component';
 import Swiper from 'swiper';
 import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 
 @Component({
   selector: 'app-detail',
   imports: [
-    SlideCardComponent,
     NgForOf
   ],
   templateUrl: './detail.component.html',

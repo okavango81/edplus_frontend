@@ -19,7 +19,7 @@ export class FooterComponent {
 
   onWindowScroll() {
     // Mostrar o botão quando a página for rolada além de 100px
-    if (window.scrollY > 700) {
+    if (window.scrollY > 600) {
       this.showScrollButton = true;
     } else {
       this.showScrollButton = false;

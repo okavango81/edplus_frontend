@@ -22,6 +22,7 @@ export class BannerComponent implements AfterViewInit {
     {title: 'Bad Boys II', image: 'edplus_img/bb2/bb2_main.jpg'},
     {title: 'O Protetor 2', image: 'edplus_img/opt/op2_main.jpg'},
     {title: 'Norbit', image: 'edplus_img/nbt/nbt_main.jpg'},
+    {title: 'Zootopia', image: 'edplus_img/ztp/ztp_main.jpg'},
     {title: 'Chaplin', image: 'edplus_img/chp/chp_main.png'},
     {title: 'Chaves', image: 'edplus_img/chv/chv_main.png'}
   ];
