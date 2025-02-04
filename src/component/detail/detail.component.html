@@ -65,10 +65,20 @@
     </div>
   </div>
 
-  <div class="doYouLike">
-    <span class="info lead text-white">Você também pode gostar</span>
-    <app-slide-card></app-slide-card>
+  <div class="swiper detail-swiper">
+    <h2 class="highlights">{{ dinamicTitle }}</h2>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide detail-slide" *ngFor="let movie of moviesCard">
+        <a href="detail.html">
+          <img [src]="movie.image" alt="{{ movie.title }}">
+        </a>
+        <!--      <p>{{ movie.title }}</p>-->
+      </div>
+    </div>
+    <!-- Paginação -->
+    <div class="swiper-pagination detail-pagination"></div>
   </div>
+
 </main>
 
 

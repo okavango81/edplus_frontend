@@ -59,20 +59,23 @@
 .play-button {
   background-color: #fff;
   color: #000;
-  padding: 15px 30px;
+  padding: 12px 50px;
   border: none;
   font-size: 18px;
   font-weight: bold;
   display: flex;
   align-items: center;
   gap: 10px;
+  border: 2px solid #0043b8;
   border-radius: 5px;
   cursor: pointer;
+  transform: scale(0.99);
   transition: transform 0.3s ease;
 }
 
 .play-button:hover {
   transform: scale(1.1);
+  border: 2px solid deepskyblue;
 }
 
 .description{
@@ -91,9 +94,74 @@
   font-weight: 700;
 }
 
-.doYouLike{
+/* Container */
+.detail-swiper{
+  width: 97.7%;
+  align-self: center;
   position: relative;
-  bottom: 100px;
-  padding: 18px;
+  top: 10px;
+  height: 52vh;
+  padding: 10px 0 10px 0 !important;
+  /*border: solid 1px deepskyblue;*/
 }
+
+.detail-slide img {
+  height: 40vh;
+  width: 100%;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  transition: border 0.2s ease, transform 0.5s ease;
+  box-sizing: border-box;
+  display: block;
+  transform: scale(0.95);
+}
+
+.detail-slide img:hover {
+  border: white 3px solid;
+  cursor: pointer;
+  border-radius: 4px;
+  transform: scale(1); /* Pequeno zoom para dar destaque */
+}
+
+
+/*.swiper-button-next:after,*/
+/*.swiper-button-prev:after {*/
+/*  position: relative;*/
+/*  color: cornflowerblue;*/
+/*  font-weight: bold;*/
+/*  padding: 10px 12px;*/
+/*  border: 2px solid cornflowerblue;*/
+/*  background-color: black;*/
+/*  opacity: .7;*/
+/*  border-radius: 10px;*/
+/*  scale: 45%;*/
+/*}*/
+
+
+/* Cor dos bullets inativos */
+.swiper-pagination-bullet {
+  background-color: white; /* Cor de fundo do bullet */
+  opacity: 0.2; /* Transparência do bullet */
+  transition: opacity 0.8s;
+  scale: 1.4;
+  z-index: 1;
+}
+
+/* Bullet ativo (atual) */
+.swiper-pagination-bullet-active {
+  background-color: #2196f3; /* Cor do bullet ativo */
+  opacity: 1; /* Transparência total */
+  z-index: 1;
+}
+
+.highlights {
+  /*color: white;*/
+  font-size: 1.35rem;
+  font-weight: 300;
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+  color: #ffffff !important;
+}
+
 

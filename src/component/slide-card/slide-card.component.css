@@ -1,21 +1,15 @@
 /* Container */
-.swiper {
+.card-swiper{
   width: 97.7%;
   align-self: center;
   position: relative;
   top: 10px;
-  padding: 10px 0 ;
-  /*border: solid 1px greenyellow;*/
+  height: 52vh;
+  padding: 10px 0 10px 0 !important;
+  /*border: solid 1px deepskyblue;*/
 }
 
-/* Define o tamanho do slide */
-.swiper-slide {
-  position: relative;
-  /*border:solid 1px greenyellow;*/
-}
-
-/* Define o tamanho e a aparência das imagens */
-.swiper-slide img {
+.card-slide img {
   height: 40vh;
   width: 100%;
   border: 3px solid transparent;
@@ -23,53 +17,37 @@
   transition: border 0.2s ease, transform 0.5s ease;
   box-sizing: border-box;
   display: block;
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
-.swiper-slide img:hover {
+.card-slide img:hover {
   border: white 3px solid;
   cursor: pointer;
   border-radius: 4px;
   transform: scale(1); /* Pequeno zoom para dar destaque */
 }
 
-.swiper-slide img:active {
-  cursor: grabbing !important;
-}
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  position: relative;
-  color: cornflowerblue;
-  font-weight: bold;
-  padding: 10px 12px;
-  border: 2px solid cornflowerblue;
-  background-color: black;
-  opacity: .7;
-  border-radius: 10px;
-  scale: 45%;
-}
+/*.swiper-button-next:after,*/
+/*.swiper-button-prev:after {*/
+/*  position: relative;*/
+/*  color: cornflowerblue;*/
+/*  font-weight: bold;*/
+/*  padding: 10px 12px;*/
+/*  border: 2px solid cornflowerblue;*/
+/*  background-color: black;*/
+/*  opacity: .7;*/
+/*  border-radius: 10px;*/
+/*  scale: 45%;*/
+/*}*/
 
-.swiper-button-next:after {
-
-}
-
-.swiper-button-prev:after {
-
-}
-
-/* posição dos bullets */
-.swiper-pagination {
-  position: relative;
-  top: 12px;
-}
 
 /* Cor dos bullets inativos */
 .swiper-pagination-bullet {
-  background-color: #ccc; /* Cor de fundo do bullet */
-  opacity: 0.8; /* Transparência do bullet */
-  transition: opacity 0.4s;
-  scale: 1.2;
+  background-color: white; /* Cor de fundo do bullet */
+  opacity: 0.2; /* Transparência do bullet */
+  transition: opacity 0.8s;
+  scale: 1.4;
   z-index: 1;
 }
 
@@ -77,6 +55,7 @@
 .swiper-pagination-bullet-active {
   background-color: #2196f3; /* Cor do bullet ativo */
   opacity: 1; /* Transparência total */
+  z-index: 1;
 }
 
 .highlights {
@@ -84,7 +63,7 @@
   font-size: 1.35rem;
   font-weight: 300;
   position: relative;
-  left: 5px;
+  left: 10px;
   bottom: 10px;
   color: #ffffff !important;
 }

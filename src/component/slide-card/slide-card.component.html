@@ -1,7 +1,7 @@
 <div class="swiper card-swiper">
-  <h2 class="highlights">Recomendações para você</h2>
+  <h2 class="highlights">{{ dinamicTitle }}</h2>
   <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let movie of moviesCard">
+    <div class="swiper-slide card-slide" *ngFor="let movie of moviesCard">
       <a href="detail.html">
         <img [src]="movie.image" alt="{{ movie.title }}">
       </a>
@@ -14,5 +14,5 @@
   <!--  <div class="swiper-button-prev"></div>-->
 
   <!-- Paginação -->
-  <div class="swiper-pagination"></div>
+  <div class="swiper-pagination slide-card-pagination"></div>
 </div>

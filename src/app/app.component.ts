@@ -14,9 +14,7 @@ import {SearchPageComponent} from '../component/search-page/search-page.componen
   imports: [
     NavbarComponent,
     FooterComponent,
-    SearchPageComponent,
-    BannerComponent,
-    SlideCardComponent,
+    DetailComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

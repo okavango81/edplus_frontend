@@ -27,7 +27,7 @@ export class BannerComponent implements AfterViewInit {
   ];
 
   ngAfterViewInit(): void {
-    const swiper = new Swiper('.banner-swiper', {
+    const swiper_banner = new Swiper('.banner-swiper', {
       modules: [Navigation, Pagination, Autoplay],
       spaceBetween: 1,
       // navigation: {
@@ -64,12 +64,12 @@ export class BannerComponent implements AfterViewInit {
     const swiperElement = this.elRef.nativeElement.querySelector('.swiper');
 
     // Parar autoplay ao interagir
-    swiper.on('touchStart', () => swiper.autoplay.stop());
-    swiperElement.addEventListener('mouseenter', () => swiper.autoplay.stop());
+    swiper_banner.on('touchStart', () => swiper_banner.autoplay.stop());
+    swiperElement.addEventListener('mouseenter', () => swiper_banner.autoplay.stop());
 
     // Reiniciar autoplay ao terminar interação
-    swiper.on('touchEnd', () => swiper.autoplay.start());
-    swiperElement.addEventListener('mouseleave', () => swiper.autoplay.start());
+    swiper_banner.on('touchEnd', () => swiper_banner.autoplay.start());
+    swiperElement.addEventListener('mouseleave', () => swiper_banner.autoplay.start());
   }
 
 }

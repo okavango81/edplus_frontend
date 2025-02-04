@@ -37,16 +37,18 @@
 
 /* Cor dos bullets inativos */
 .swiper-pagination-bullet {
-  background-color: #ccc; /* Cor de fundo do bullet */
+  background-color: white; /* Cor de fundo do bullet */
   opacity: 0.2; /* Transparência do bullet */
-  transition: opacity 0.4s;
-  scale: 1.2;
+  transition: opacity 0.8s;
+  scale: 1.4;
+  z-index: 1;
 }
 
 /* Bullet ativo (atual) */
 .swiper-pagination-bullet-active {
   background-color: #2196f3; /* Cor do bullet ativo */
   opacity: 1; /* Transparência total */
+  z-index: 1;
 }
 
 /* posição do título */

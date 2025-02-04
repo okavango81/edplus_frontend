@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, ViewEncapsulation} from '@angular/core';
 import Swiper from 'swiper';
 import {Navigation, Pagination, Autoplay} from 'swiper/modules';
 
@@ -15,10 +15,12 @@ import {NgForOf} from '@angular/common';
     NgForOf
   ],
   templateUrl: './slide-card.component.html',
-  styleUrl: './slide-card.component.css'
+  styleUrl: './slide-card.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 
 export class SlideCardComponent implements AfterViewInit {
+  dinamicTitle = 'Recomendações Para Você';
 
   moviesCard = [
     {title: 'Bad Boys II', image: 'edplus_img/bb2/bb2_card.png'},
@@ -39,7 +41,7 @@ export class SlideCardComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    const swiper = new Swiper('.card-swiper', {
+    const swiper_card = new Swiper('.card-swiper', {
       modules: [Navigation, Pagination, Autoplay],
       spaceBetween: 20,
       // navigation: {
@@ -76,12 +78,12 @@ export class SlideCardComponent implements AfterViewInit {
     const swiperElement = this.elementRef.nativeElement.querySelector('.swiper');
 
     // Parar autoplay ao interagir
-    swiper.on('touchStart', () => swiper.autoplay.stop());
-    swiperElement.addEventListener('mouseenter', () => swiper.autoplay.stop());
+    swiper_card.on('touchStart', () => swiper_card.autoplay.stop());
+    swiperElement.addEventListener('mouseenter', () => swiper_card.autoplay.stop());
 
     // Reiniciar autoplay ao terminar interação
-    swiper.on('touchEnd', () => swiper.autoplay.start());
-    swiperElement.addEventListener('mouseleave', () => swiper.autoplay.start());
+    swiper_card.on('touchEnd', () => swiper_card.autoplay.start());
+    swiperElement.addEventListener('mouseleave', () => swiper_card.autoplay.start());
   }
 
 }
