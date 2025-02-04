@@ -62,15 +62,14 @@ export class SlideCardComponent implements AfterViewInit {
         374: {slidesPerView: 2},
         411: {slidesPerView: 2},
         576: {slidesPerView: 3},
-        665: {slidesPerView: 6},
-        683: {slidesPerView: 6},
-        733: {slidesPerView: 6},
-        735: {slidesPerView: 7},
+        665: {slidesPerView: 5},
+        683: {slidesPerView: 4},
+        734: {slidesPerView: 5},
         767: {slidesPerView: 3},
-        992: {slidesPerView: 4},
+        992: {slidesPerView: 5},
         1023: {slidesPerView: 5},
-        1200: {slidesPerView: 5},
-        1400: {slidesPerView: 6},
+        1200: {slidesPerView: 6},
+        1400: {slidesPerView: 6}
       },
     });
 

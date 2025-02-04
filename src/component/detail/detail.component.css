@@ -100,13 +100,13 @@
   align-self: center;
   position: relative;
   top: 10px;
-  height: 52vh;
+  height: 68vh;
   padding: 10px 0 10px 0 !important;
   /*border: solid 1px deepskyblue;*/
 }
 
 .detail-slide img {
-  height: 40vh;
+  height: 45vh;
   width: 100%;
   border: 3px solid transparent;
   border-radius: 4px;
