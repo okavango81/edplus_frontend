@@ -1,40 +1,45 @@
-# EdplusFrontend
+# Edplus Front-end
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
 
-## Development server
+## Project description
 
-To start a local development server, run:
+This project consists of a static template developed in Angular, which will serve as the basis for future integration with a Restful API built in Sprig and a MySQL database. The objective here is to create an initial structure that facilitates the implementation of front-end functionalities, ensuring efficient integration with the back-end and the database.
 
+
+## Objectives
+
+- Front-end (Angular): Develop a static interface that can be easily adapted to consume data from a Restful API
+- Back-end (Spring): Future implementation of a Restful API to manage requests and interactions with the database
+- Banco de dados (MySQL): Store and manage data efficiently by integrating with the Spring API
+
+
+## Project structure
+
+- Front-end: Developed in Angular, containing pre-configured components, services and routes
+- Back-end: To be developed in Spring, following good Restful API development practices
+- Database: MySQL, with a database schema to be defined during integration
+
+## How to use
+
+#### 1. Clone the repository
 ```bash
-ng serve
+git clone git@github.com:okavango81/edplus_frontend.git
+```
+#### 2. Install dependencies
+```bash
+npm install
+```
+#### 3. Run the project
+```bash
+npm serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Future implementations (running)
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Integration with Restful API (Spring)
+- Connection to MySQL database
+- Development of dynamic features on the front-end
 
 ## Running unit tests
 
@@ -44,16 +49,4 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 ng test
 ```
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
