@@ -4,7 +4,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## Project description
 
-This project consists of a static template developed in Angular, which will serve as the basis for future integration with a Restful API built in Sprig and a MySQL database. The objective here is to create an initial structure that facilitates the implementation of front-end functionalities, ensuring efficient integration with the back-end and the database.
+This project consists of a static template developed in Angular, which will serve as the basis for future integration with a Restful API built in Spring and a MySQL database. The objective here is to create an initial structure that facilitates the implementation of front-end functionalities, ensuring efficient integration with the back-end and the database.
 
 
 ## Objectives
